@@ -551,6 +551,9 @@ html{
     width: 100%;
     padding: 10px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contacto .col input, .contacto .col textarea{
     display: block;
@@ -589,30 +592,8 @@ html{
 .contacto button:hover .overlay{
     width: 100%;
 }
-.contacto .col img{
-    width: 50px;
-    height: 50px;
-}
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    padding: 20px;
-    max-swidth: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contacto .col .info ul{
-    list-style: none;
-}
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-    
-}
-.contacto .col .info ul li i{
-    color: rgb(111, 139, 232);
-    display: inline-block;
-    margin-right: 20px;
-}
+
+
 footer{
     background-color: #252A2E;
     color: #fff;

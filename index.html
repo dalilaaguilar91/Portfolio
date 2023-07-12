@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init('eH9vWdG7GcIUCWcT8')
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+  </head>
+  <body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#inicio">Dalila</a>
+        </div>
+        <nav id="nav" >
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img class="profile" src="img/fotoperfil.jpg" alt="">
+            </div>
+            <h1>DALILA AGUILAR</h1>
+            <h2>Front End Developer</h2>
+            <div class="redes">
+                
+                <a href="https://join.skype.com/invite/mZGTlc8y5VRy" target="_blank"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/dalilaaguilar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/dalilaaguilar91" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>ABOUT ME</h2>
+        <p>Hi, I'm Dalila, I'm a Systems Analyst and Front End Developer.
+          I really like the computer world and I try to learn new things
+          all the time to be more professional. </p>
+          <div class="fila">
+            <!--Datos personales-->
+            <div class="col">
+              <h3>Personal information</h3>
+              <ul>
+                <li>
+                  <strong>Birthday</strong>
+                  08-02-2001
+                </li>
+                <li>
+                  <strong>Phone</strong>
+                  (+54) 3364271954
+                </li>
+                <li>
+                  <strong>Email</strong>
+                  Daliaguilar91@gmail.com
+                </li>
+               
+                <li>
+                  <strong>Address</strong>
+                  Santa Fe, Argentina
+                </li>
+                <li>
+                  <strong>Work position</strong>
+                  <span>Freelance</span>
+                </li>
+              </ul>
+            </div>
+
+            <!--Interes-->
+            <div class="col">
+              <h3>Interests</h3>
+              <div class="contenedor-intereses">
+                <div class="interes">
+                  <i class="fa-solid fa-dumbbell"></i>
+                  <span>Gym</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-headphones"></i>
+                  <span>Music</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>Travel</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-code"></i>
+                  <span>Program</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-book"></i>
+                  <span>Book</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-pen"></i>
+                  <span>Draw</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-solid fa-palette"></i>
+                  <span>Paint</span>
+                </div>
+                <div class="interes">
+                  <i class="fa-brands fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+            </div>
+          </div>
+          </div>
+          <button >
+            <a download="CurriculumDalila" href="Dalila.pdf">Download CV </a>
+            <i class="fa-solid fa-download"></i>
+            <span  class="overlay"></span>
+
+          </button>
+      </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>SKILLS</h2>
+        <div class="fila">
+        <!---Technicnal skill-->
+        <div class="col">
+          <h3>Technicnal Skills</h3>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="barra-skill">
+              <div class="progreso ">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>HTML</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Css</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Mysql</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Bootstrap</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Professional skills-->
+        <div class="col">
+          <h3>Professional Skills</h3>
+          <div class="skill">
+            <span>Communicationn</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>65%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Teamwork</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Creativity</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Dedication</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Organization</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+          <h2>CURRICULUM</h2>
+          <div class="fila">
+              <div class="col izquierda">
+                  <h3>Education</h3>
+                  <div class="item izq">
+                      <h4>Front End Developer</h4>
+                      <span class="casa">Oracle Next Education</span>
+                      <span class="fecha">2022 - 2023</span>
+                      <p>I acquired knowledge in web development</p>
+                      <div class="conectori">
+                          <div class="circuloi"></div>
+                      </div>
+                  </div>
+                  
+                  <div class="item izq">
+                      <h4>Systems</h4>
+                      <span class="casa">I.S.S.P</span>
+                      <span class="fecha">2019 - 2022</span>
+                      <p>I acquired knowledge in systems</p>
+                      <div class="conectori">
+                          <div class="circuloi"></div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col derecha">
+                  <h3>Experience</h3>
+                  <div class="item der">
+                      <h4>Front Developer</h4>
+                      <span class="casa">Oracle Next Education</span>
+                      <span class="fecha">2022 - 2023</span>
+                      <p>I gained educational experience creating my own projects</p>
+                      <div class="conectord">
+                          <div class="circulod"></div>
+                      </div>
+                  </div>
+                  
+                  <div class="item der">
+                    <h4>HTML & CSS</h4>
+                    <span class="casa">Oracle Next Education</span>
+                    <span class="fecha">2022 - 2023</span>
+                    <p>I gained experience creating my own projects</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                
+                <div class="item der">
+                  <h4>JavaScript</h4>
+                  <span class="casa">Oracle Next Education</span>
+                  <span class="fecha">2022 - 2023</span>
+                  <p>I gained experience creating my own projects</p>
+                  <div class="conectord">
+                      <div class="circulod"></div>
+                  </div>
+              </div>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--SECCION PORTAFOLIO-->
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="img/encriptador.png" alt="">
+                <div class="overlay">
+                    <h3>Development</h3>
+                    <p>Data Encryptor</p>
+                </div>
+            </div> 
+  </section>
+
+  <!--SECCION CONTACTO-->
+  
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+          <h2>CONTAC</h2>
+          <div class="fila">
+              <!-- Formulario -->
+              <form id="form">
+                <div class="col">
+                  <input type="text" placeholder="Name" id="from_name" for="from_name" name="from_name" required>
+                </div>
+                <div class="col">
+                  <input type="text" placeholder="Phone Number" id="number" for="number" name="number" required>
+                </div>
+                <div class="col">
+                  <input type="text" placeholder="Email address" id="email" for="email" name="email" required>
+                </div>
+                <div class="col">
+                  <input type="text" placeholder="Issue" id="issue" for="issue"  name="issue" required>
+                </div>
+                <div class="col">
+                  <textarea name="message" id="messaje" cols="30" rows="10" placeholder="Message" for="message" required></textarea>
+                </div>
+                <button type="submit" id="button" value="Send Email">
+                  Send Message<i class="fa-solid fa-paper-plane"></i>
+                  <span class="overlay"></span>
+              </button>
+              </form>
+              <div class="col">
+            </div>
+              <!-- Mapa -->
+              <div class="col">
+                
+                  <div class="info">
+                      <ul>
+                          <li>
+                              <i class="fa-solid fa-location-dot"></i>
+                              Villa Constitución, Santa Fe
+                          </li>
+                          <li>
+                              <i class="fa-solid fa-mobile-screen"></i>
+                            3364 - 271954 
+                          </li>
+                          <li>
+                              <i class="fa-solid fa-envelope"></i>
+                              Daliaguilar91@gmail.com
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer>
+    <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+      
+      <a href="https://join.skype.com/invite/mZGTlc8y5VRy" target="_blank"><i class="fa-brands fa-skype"></i></a>
+      <a href="https://www.linkedin.com/in/dalilaaguilar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/dalilaaguilar91" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
